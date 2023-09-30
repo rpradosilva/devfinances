@@ -1,0 +1,79 @@
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --headline: normal 400 36px/1 Poppins, sans-serif;
+  --bold: normal 600 16px/1 Poppins, sans-serif;
+  --paragraph: normal 400 16px/1 Poppins, sans-serif;
+  --white: #ffffff;
+  --lightgray: #f0f2f5;
+  --gray: #969cb2;
+  --black: #363f5f;
+  --red: #e92929;
+  --green: #49aa26;
+  --darkgreen: #2d4a22;
+}
+
+body {
+  background: var(--light-gray);
+  color: var(--gray);
+  font: var(--paragraph);
+}
+
+main {
+  background: var(--lightgray);
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  align-items: start;
+  background: var(--darkgreen);
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  padding: 5vh;
+}
+
+header img {
+  max-width: 240px;
+}
+
+section {
+  display: flex;
+  margin: 0 10vw;
+}
+
+.transactions__panel {
+  color: var(--black);
+  gap: 32px;
+  justify-content: center;
+  margin-top: -8vh;
+}
+
+.panel__item {
+  background: var(--white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+  max-width: 352px;
+}
+
+.panel__item:nth-child(3) {
+  background: var(--green);
+  color: var(--white);
+}
+
+.panel__item-label {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel__item-value {
+  font: var(--headline);
+}
